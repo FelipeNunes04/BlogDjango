@@ -8,7 +8,7 @@
         <p>Para mais informações sobre o evento e como participar, envie-nos uma mensagem.</p>
     </div>
        
-    <div class="row">
+    <div class="row text-center">
 		<div class="col-sm-6 col-sm-offset-3">
 			<form  method="POST" id="contact-form" role="form">{% csrf_token %}
 				<div class="form-group wow fadeInUp">
