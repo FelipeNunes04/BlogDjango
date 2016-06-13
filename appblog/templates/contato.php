@@ -10,7 +10,7 @@
        
     <div class="row">
 		<div class="col-sm-6 col-sm-offset-3">
-			<form  method="POST" id="contact-form" role="form">
+			<form  method="POST" id="contact-form" role="form">{% csrf_token %}
 				<div class="form-group wow fadeInUp">
 					<input type="text" id="nome" class="form-control" name="nome" placeholder="Nome" required>
 				</div>
