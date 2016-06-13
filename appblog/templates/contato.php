@@ -27,8 +27,8 @@
             <br>
 			<?php
 				if($_POST){
-					$to = 'contato@myclassapp.com.br, felipennunes@hotmail.com';
-					$subject = 'CONTATO MyClass';
+					$to = 'felipennunes@hotmail.com';
+					$subject = 'CONTATO Blog do Felipe';
 					$message = $_POST['mensagem'];
 					$headers = 	$_POST['nome']. "\r\n" .
 								$_POST['email']. "\r\n" ;
