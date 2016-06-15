@@ -27,6 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+DEFAULT_FROM_EMAIL = 'felipennunes@hotmail.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'lipinhornunes55@gmail.com'
+EMAIL_HOST_PASSWORD = 'a1m2o3r4'
+EMAIL_USE_TLS = True    # Necessário para emails do tipo Gmail
+EMAIL_SUBJECT_PREFIX = "Blog do Felipe - "
+
 
 # Application definition
 
@@ -38,6 +46,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'appblog',
+    'contato',
 )
 
 MIDDLEWARE_CLASSES = (

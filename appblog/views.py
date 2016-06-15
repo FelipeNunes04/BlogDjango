@@ -1,7 +1,10 @@
+from django.conf import settings
 from django.shortcuts import render
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic import TemplateView
+from django.core.mail import EmailMessage
+
 from .models import Post
 
 class PostListView(ListView):
@@ -20,8 +23,13 @@ class PostDetailView(DetailView):
 class Sobre(TemplateView):
 	template_name = "sobre.html"
 
-class Contato(TemplateView):
-	template_name = "contato.php"
-		
+
+
+
+
+
+
+
+
 
 
