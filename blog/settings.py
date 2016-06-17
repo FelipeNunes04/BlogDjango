@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -23,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_4cm&&8^^*%hp+kv23f_qlx_#)1i^_l9%@y$el1a==+shyh)0l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 DEFAULT_FROM_EMAIL = 'felipennunes@hotmail.com'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -86,8 +85,11 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'cursodjango$blog',
+        'USER': 'cursodjango',
+        'PASSWORD': 'felipe123',
+        'HOST': 'cursodjango.mysql.pythonanywhere-services.com',
     }
 }
 
@@ -114,3 +116,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR+'/media/'
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR+'/static/'
