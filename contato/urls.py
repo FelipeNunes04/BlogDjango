@@ -1,5 +1,5 @@
-from django.conf.urls import include, url
-from contato.views import *
+from django.conf.urls import url
+from contato.views import ContatoSuccess,form
 
 
 urlpatterns =[
