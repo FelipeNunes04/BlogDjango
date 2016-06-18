@@ -9,12 +9,12 @@ from .models import Post
 
 class PostListView(ListView):
 	template_name = u'post/listar.html'
-	paginate_by = 2
+	paginate_by = 4
 
 	def get_queryset(self):
 		post = Post.objects.all().order_by('-criado')
 		return post
-	
+
 
 class PostDetailView(DetailView):
 	model = Post

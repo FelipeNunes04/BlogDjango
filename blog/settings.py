@@ -22,15 +22,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_4cm&&8^^*%hp+kv23f_qlx_#)1i^_l9%@y$el1a==+shyh)0l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
 DEFAULT_FROM_EMAIL = 'felipennunes@hotmail.com'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 25
+EMAIL_PORT = 587
 EMAIL_HOST_USER = 'lipinhornunes55@gmail.com'
-EMAIL_HOST_PASSWORD = 'a1m2o3r4'
+EMAIL_HOST_PASSWORD = 'a1l2l3y4n5e6'
 EMAIL_USE_TLS = True    # Necessário para emails do tipo Gmail
 EMAIL_SUBJECT_PREFIX = "Blog do Felipe - "
 
